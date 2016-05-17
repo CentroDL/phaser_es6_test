@@ -1,5 +1,6 @@
 import ExampleObject from 'objects/ExampleObject';
 import DayCycle from 'objects/DayCycle';
+import Weather from 'objects/Weather';
 
 class Main extends Phaser.State {
 
@@ -7,6 +8,7 @@ class Main extends Phaser.State {
 
 		//Enable Arcade Physics
 		this.game.physics.startSystem(Phaser.Physics.ARCADE);
+		this.weather = new Weather(this.game);
 
 		//Set the games background colour
 		this.game.stage.backgroundColor = '#000';

@@ -57,6 +57,11 @@ class Main extends Phaser.State {
     this.dayCycle.initSun(this.sunSprite);
     this.dayCycle.initMoon(this.moonSprite);
 
+    this.weather.addRain();
+		// this.weather.removeRain();
+		this.weather.addFog();
+		// this.weather.removeFog();
+
 	} // create
 
 	update() {
